@@ -3,29 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <title>Mery Vindel - Modelo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    /* Tipografía elegante */
     body {
       margin: 0;
-      font-family: 'Helvetica Neue', Arial, sans-serif;
-      background-color: #fff;
-      color: #222;
+      font-family: 'Playfair Display', serif;
+      color: #fff;
+      background: url('images/fondo.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    /* Fondo oscuro difuminado */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+      z-index: -1;
     }
 
     /* Header */
     header {
       text-align: center;
-      padding: 60px 20px;
-      background-color: #f5f5f5;
+      padding: 80px 20px;
     }
     header h1 {
-      font-size: 60px;
-      letter-spacing: 3px;
+      font-size: 70px;
+      letter-spacing: 4px;
       margin: 0;
     }
     header p {
       font-size: 22px;
-      color: #555;
+      color: #ddd;
       margin-top: 10px;
+      font-weight: 400; /* más fina */
     }
 
     /* Sections */
@@ -35,9 +48,10 @@
       padding: 0 20px;
     }
     h2 {
-      font-size: 32px;
+      font-size: 36px;
       margin-bottom: 25px;
       text-align: center;
+      font-weight: 700;
     }
 
     /* Portfolio Grid */
@@ -61,7 +75,7 @@
       position: fixed;
       top: 0; left: 0;
       width: 100%; height: 100%;
-      background: rgba(0,0,0,0.9);
+      background: rgba(0,0,0,0.95);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -92,15 +106,16 @@
       text-align: center;
       font-size: 18px;
       line-height: 1.6;
-      color: #444;
+      color: #ddd;
     }
     .about p {
       margin: 10px 0;
+      font-weight: 400; /* más fina */
     }
     a {
-      color: #222;
+      color: #fff;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 500;
     }
   </style>
 </head>
@@ -108,38 +123,58 @@
 
   <header>
     <h1>MERY VINDEL</h1>
-    <p>Modelo Editorial & Fashion </p>
+    <p>Modelo Editorial & Fashion | Colaboraciones y Cursos</p>
   </header>
 
+  <!-- POLAROIDS -->
+  <section class="portfolio-section">
+    <h2>Polaroids</h2>
+    <div class="portfolio">
+      <a href="#polaroid1"><img src="images/polaroid1.jpg" alt="Polaroid 1"></a>
+      <a href="#polaroid2"><img src="images/polaroid2.jpg" alt="Polaroid 2"></a>
+      <a href="#polaroid3"><img src="images/polaroid3.jpg" alt="Polaroid 3"></a>
+      <a href="#polaroid4"><img src="images/polaroid4.jpg" alt="Polaroid 4"></a>
+    </div>
+    <!-- Lightbox Polaroids -->
+    <div id="polaroid1" class="lightbox"><a href="#" class="close">&times;</a><img src="images/polaroid1.jpg" alt="Polaroid 1"></div>
+    <div id="polaroid2" class="lightbox"><a href="#" class="close">&times;</a><img src="images/polaroid2.jpg" alt="Polaroid 2"></div>
+    <div id="polaroid3" class="lightbox"><a href="#" class="close">&times;</a><img src="images/polaroid3.jpg" alt="Polaroid 3"></div>
+    <div id="polaroid4" class="lightbox"><a href="#" class="close">&times;</a><img src="images/polaroid4.jpg" alt="Polaroid 4"></div>
+  </section>
+
+  <!-- TEST -->
+  <section class="portfolio-section">
+    <h2>Test</h2>
+    <div class="portfolio">
+      <a href="#test1"><img src="images/test1.jpg" alt="Test 1"></a>
+      <a href="#test2"><img src="images/test2.jpg" alt="Test 2"></a>
+      <a href="#test3"><img src="images/test3.jpg" alt="Test 3"></a>
+      <a href="#test4"><img src="images/test4.jpg" alt="Test 4"></a>
+    </div>
+    <!-- Lightbox Test -->
+    <div id="test1" class="lightbox"><a href="#" class="close">&times;</a><img src="images/test1.jpg" alt="Test 1"></div>
+    <div id="test2" class="lightbox"><a href="#" class="close">&times;</a><img src="images/test2.jpg" alt="Test 2"></div>
+    <div id="test3" class="lightbox"><a href="#" class="close">&times;</a><img src="images/test3.jpg" alt="Test 3"></div>
+    <div id="test4" class="lightbox"><a href="#" class="close">&times;</a><img src="images/test4.jpg" alt="Test 4"></div>
+  </section>
+
+  <!-- PORTFOLIO -->
   <section class="portfolio-section">
     <h2>Portfolio</h2>
     <div class="portfolio">
-      <a href="#img1"><img src="https://via.placeholder.com/400x600?text=Foto+1" alt="Foto 1"></a>
-      <a href="#img2"><img src="https://via.placeholder.com/400x600?text=Foto+2" alt="Foto 2"></a>
-      <a href="#img3"><img src="https://via.placeholder.com/400x600?text=Foto+3" alt="Foto 3"></a>
-      <a href="#img4"><img src="https://via.placeholder.com/400x600?text=Foto+4" alt="Foto 4"></a>
+      <a href="#portfolio1"><img src="images/portfolio1.jpg" alt="Portfolio 1"></a>
+      <a href="#portfolio2"><img src="images/portfolio2.jpg" alt="Portfolio 2"></a>
+      <a href="#portfolio3"><img src="images/portfolio3.jpg" alt="Portfolio 3"></a>
+      <a href="#portfolio4"><img src="images/portfolio4.jpg" alt="Portfolio 4"></a>
     </div>
-
-    <!-- Lightbox -->
-    <div id="img1" class="lightbox">
-      <a href="#" class="close">&times;</a>
-      <img src="https://via.placeholder.com/800x1200?text=Foto+1" alt="Foto 1">
-    </div>
-    <div id="img2" class="lightbox">
-      <a href="#" class="close">&times;</a>
-      <img src="https://via.placeholder.com/800x1200?text=Foto+2" alt="Foto 2">
-    </div>
-    <div id="img3" class="lightbox">
-      <a href="#" class="close">&times;</a>
-      <img src="https://via.placeholder.com/800x1200?text=Foto+3" alt="Foto 3">
-    </div>
-    <div id="img4" class="lightbox">
-      <a href="#" class="close">&times;</a>
-      <img src="https://via.placeholder.com/800x1200?text=Foto+4" alt="Foto 4">
-    </div>
-
+    <!-- Lightbox Portfolio -->
+    <div id="portfolio1" class="lightbox"><a href="#" class="close">&times;</a><img src="images/portfolio1.jpg" alt="Portfolio 1"></div>
+    <div id="portfolio2" class="lightbox"><a href="#" class="close">&times;</a><img src="images/portfolio2.jpg" alt="Portfolio 2"></div>
+    <div id="portfolio3" class="lightbox"><a href="#" class="close">&times;</a><img src="images/portfolio3.jpg" alt="Portfolio 3"></div>
+    <div id="portfolio4" class="lightbox"><a href="#" class="close">&times;</a><img src="images/portfolio4.jpg" alt="Portfolio 4"></div>
   </section>
 
+  <!-- ABOUT -->
   <section class="about">
     <h2>Sobre Mí</h2>
     <p><strong>Altura:</strong> 165 cm | <strong>Medidas:</strong> 86-62-93</p>
@@ -150,6 +185,7 @@
     <p>He realizado colaboraciones y participado en cursos de modelaje, desarrollando técnica y estilo profesional.</p>
   </section>
 
+  <!-- CONTACT -->
   <section class="contact">
     <h2>Contacto</h2>
     <p>Email: <a href="mailto:vindelmery@gmail.com">vindelmery@gmail.com</a></p>
