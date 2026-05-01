@@ -13,7 +13,25 @@
       background: url('images/fondo.jpg') no-repeat center center fixed;
       background-size: cover;
     }
+     .big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.about {
+  text-align: center;
+  font-size: 22px;
+  line-height: 1.8;
+  color: #ddd;
+}
 
+.about h2 {
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+    .about p {
+  max-width: 700px;
+  margin: 10px auto;
+}   
     /* Fondo oscuro difuminado */
     body::before {
       content: '';
@@ -168,8 +186,8 @@
     <!-- Lightbox Portfolio -->
     <div id="portfolio1" class="lightbox"><a href="#" class="close">&times;</a><img src="images/portfolio1.jpg" alt="Portfolio 1"></div>
     <div id="portfolio2" class="lightbox"><a href="#" class="close">&times;</a><img src="images/portfolio2.jpg" alt="Portfolio 2"></div>
-    <div id="portfolio3" class="lightbox"><a href="#" class="close">&times;</a><img src="images/portfolio3.jpg" alt="Portfolio 3"></div>
-    <div id="portfolio4" class="lightbox"><a href="#" class="close">&times;</a><img src="images/portfolio4.jpg" alt="Portfolio 4"></div>
+    <div id="portfolio3" class="lightbox"><a href="#" class="close">&times;</a><img src="images/portfolio3.jpg" class="big" alt="Portfolio 3"></div>
+    <div id="portfolio4" class="lightbox"><a href="#" class="close">&times;</a><img src="images/portfolio4.jpg" class="big" alt="Portfolio 4"></div>
     <div id="portfolio5" class="lightbox"><a href="#" class="close">&times;</a><img src="images/portfolio5.jpg" alt="Portfolio 5"></div>
     <div id="portfolio6" class="lightbox"><a href="#" class="close">&times;</a><img src="images/portfolio6.jpg" alt="Portfolio 6"></div>
   </section>
